@@ -1,0 +1,100 @@
+.navi_bar_a{
+    text-decoration: none;
+}
+#navi_bar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: rgb(58, 4, 61);
+    z-index: 1;
+    justify-content: center;
+}  
+.navi_btn, .selected_btn, .navi_btn_dropdown, .navi_btn_dropdown_selected{
+    text-align: center;
+    height: 40px;
+    font-weight: bold;
+    display: inline;
+    border: 0;
+    border-radius: 0;
+    padding: 0.8em 2em;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.navi_btn{
+    color: white;
+    background: rgb(58, 4, 61);
+}
+.selected_btn{
+    color: rgb(58, 4, 61);
+    background: white;
+}
+.navi_btn_dropdown_selected{
+    color: rgb(58, 4, 61);
+    background: rgba(255, 255, 255, 0.4);
+}
+.navi_btn:hover, .selected_btn:hover, .explore_dropdown:hover #navi_btn_explore{
+    transform: translate(-0.25rem,0.25rem);
+    box-shadow: 0.25rem -0.25rem rgba(0, 0, 0, 0.5);
+}
+.navi_btn:hover, .explore_dropdown:hover #navi_btn_explore{
+    color: black;
+    background: rgb(188, 9, 9);
+}
+.selected_btn:hover{
+    color: rgb(188, 9, 9);
+}
+.navi_btn:active, .selected_btn:active{
+    border: 0;
+    transform: translate(0);
+    box-shadow: none;
+}
+.navi_btn:active{
+    background-color: white;
+    color: rgb(58, 4, 61);
+}
+.selected_btn:active{
+    background-color: rgb(58, 4, 61);
+    color: white;
+}
+.explore_dropdown:hover{
+    z-index: 2;
+}
+.explore_dropdown_content{
+    display: none;
+    position: absolute;
+    z-index: -1;
+}
+.explore_dropdown_content a{
+    float: none;
+    display: block;
+}
+.explore_dropdown_content a:hover{
+    color: black;
+}
+.explore_dropdown:hover .explore_dropdown_content{
+    display: block;
+}
+.navi_btn_dropdown, .navi_btn_dropdown_selected{
+    width: 150px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.navi_btn_dropdown{
+    color: white;
+    background: rgba(58, 4, 61, 0.4);
+}
+.navi_btn_dropdown:hover{
+    color: black;
+    background-color: rgba(188, 9, 9, 0.7);
+}
+.navi_btn_dropdown_selected:hover{
+    color: rgba(188, 9, 9, 0.7);
+}
+#home_logo{
+    height: 40px;
+    float: left;
+}
+.home_logo_selected{
+    margin-right: 10px;
+}

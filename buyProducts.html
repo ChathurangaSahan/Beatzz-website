@@ -1,0 +1,381 @@
+<!-- Name    : Lenmini Sadeera Illangakoon
+     IIT No. : 20220305
+     UoW No. : w1953815  -->
+     
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<title>Shop</title>
+		<link rel="stylesheet" type="text/css" href="buyProducts.css">
+        <link rel="stylesheet" href="common.css">
+        <script src="buyProducts.js"></script>
+    </head>
+    <body>
+		<!-- Navigation Bar -->
+        <div id="navi_bar">
+            <img class="home_logo_selected" id="home_logo" src="white_logo2.png" alt="BEATZz">
+            <button class="navi_btn" id="home">HOME</button>
+            <div class="explore_dropdown">
+                <button id="navi_btn_explore" class="navi_btn">EXPLORE</button>
+                <div class="explore_dropdown_content">
+                    <button class="navi_btn_dropdown" id="popCulture">POP CULTURE</button><br>
+                    <button class="navi_btn_dropdown" id="topSongs">TOP SONGS</button><br>
+                    <button class="navi_btn_dropdown" id="bestConcerts">CONCERTS</button><br>
+                    <button class="navi_btn_dropdown" id="awards">AWARDS</button>
+                </div>
+            </div>
+            <button class="navi_btn" id="gallery">GALLERY</button>
+            <button class="navi_btn" id="quiz">QUIZ</button>
+            <button class="selected_btn" id="shop">SHOP</button>
+            <button class="navi_btn" id="contactUs">CONTACT US</button>
+            <button class="navi_btn" id="aboutUs">ABOUT US</button>
+        </div>
+        <div class="products">
+            <div class="tabs">
+                <button class="btn tablink" onclick="openPage('SweatersHoodies', this, 'purple')" id="defaultOpen">SWEATERS AND HOODIES</button>
+                <button class="btn tablink" onclick="openPage('shirts', this, 'purple')">SHIRTS</button>
+                <button class="btn tablink" onclick="openPage('albums', this, 'purple')">ALBUMS</button>
+                <button class="btn tablink" onclick="openPage('other', this, 'purple')">MORE</button>
+
+                <form  name="buyForm" action="BuyProductsForm.html">
+                    <fieldset id="productsTable">
+                        <legend> Shop </legend>
+                        <!--PRODUCTS-->
+                            <!-- Sweaters/Hoodies -->
+                            <div id="SweatersHoodies" class="tabcontent">			
+                                <table> 
+                                    <tr> 
+                                        <!--Product 1 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="images/1-C1Fq2CCG7r3HXvJ85wDX_600x-removebg-preview.png" alt="product 1" width="300" height="300">
+                                                <p>Taylor Swift<br>The Eras Tour Heather Gray Crewneck</p>
+                                                <p>&#36; 65</p>
+                                                <label for="Q1"> Size: </label>
+                                                <select name="size" id="Q1"> 
+                                                    <option value="small">S</option>
+                                                    <option value="medium">M</option>
+                                                    <option value="large">L</option>
+                                                </select>
+                                                <label for="quantity1"> Quantity : </label>
+                                                <input type="number" id="quantity1" name="Quantity1" min="0" value="0"> <!-- Input feild for the quantity of Product 1-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button1" onclick="addToCart(1)"> Add To Cart </button> <!--if product 1 is selected calls the addToCart() function and pass the argument "1" to it, and adds the selected item to the shopping cart-->
+                                            </div>
+                                        </td>
+                                        <!--Product 2 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="images/Hip-Hop-Hoodies-Men-Fashion-Rapper-Weeknd-Hoodie-Kids-Hip-Hop-Boy-Clothing-Women-Sweatshirt-Autumn-300x300-removebg-preview.png" alt="product 2" width="300" height="300">
+                                                <p>The Weekend<br>After Hours Black Hoodie</p>
+                                                <p>&#36; 60</p>
+                                                <label for="Q2"> Size: </label>
+                                                <select name="size" id="Q2"> 
+                                                    <option value="small">S</option>
+                                                    <option value="medium">M</option>
+                                                    <option value="large">L</option>
+                                                </select>									
+                                                <label for="quantity2"> Quantity: </label>
+                                                <input type="number" id="quantity2" name="Quantity2" min="0" value="0"> <!-- Input feild for the quantity of Product 2-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button2" onclick="addToCart(2)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <!--Product 3 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="images/ed-sheeran-divide-sweatshirt-removebg-preview.png" alt="product 3" width="300" height="300">
+                                                <p>Ed Sheeran<br>Divide Sweatshirt</p>
+                                                <p>&#36; 60</p>
+                                                <label for="Q3"> Size: </label>
+                                                <select name="size" id="Q3"> 
+                                                    <option value="small">S</option>
+                                                    <option value="medium">M</option>
+                                                    <option value="large">L</option>
+                                                </select>									
+                                                <label for="quantity3"> Quantity: </label>
+                                                <input type="number" id="quantity3" name="Quantity3" min="0" value="0"> <!-- Input feild for the quantity of Product 3-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button3" onclick="addToCart(3)"> Add To Cart </button> 
+                                            </div>
+                                        </td>														
+                                        <!--Product 4 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="images/PeachesHoodieBack-removebg-preview.png" alt="product 4" width="300" height="300">
+                                                <p>Justin Bieber<br>Peaches Tie Dye Hoodie</p>
+                                                <p>&#36; 70</p>
+                                                <label for="Q4"> Size: </label>
+                                                <select name="size" id="Q4"> 
+                                                    <option value="small">S</option>
+                                                    <option value="medium">M</option>
+                                                    <option value="large">L</option>
+                                                </select>									
+                                                <label for="quantity3"> Quantity: </label>
+                                                <input type="number" id="quantity4" name="Quantity4" min="0" value="0"> <!-- Input feild for the quantity of Product 4-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button4" onclick="addToCart(4)"> Add To Cart </button>
+                                            </div>
+                                        </td>	
+                                    </tr>			
+                                </table>
+                            </div>
+            				<!-- Shirts -->	
+				            <div id="shirts" class="tabcontent">
+					            <table>
+						            <tr>
+							            <!--Product 5 -->
+							            <td>
+								            <div class="card"> 
+									            <img src="images/A1ntnF3PJOL._AC_CLa_2140_2000_819wSjPsxOL.png_0_0_2140_2000+0.0_0.0_2140.0_2000.0_UY1000_-removebg-preview.png" alt="product 5" width="300" height="300">
+									            <p>Selena Gomez<br> Rare Album T-Shirt</p>
+									            <p>&#36; 24</p>
+									            <label for="Q5"> Size: </label>
+									            <select name="size" id="Q5"> 
+										            <option value="small">S</option>
+										            <option value="medium">M</option>
+										            <option value="large">L</option>
+									            </select>									
+									            <label for="quantity5"> Quantity: </label>
+									            <input type="number" id="quantity5" name="Quantity5" min="0" value="0"> <!-- Input feild for the quantity of Product 5-->
+									            <br><br>
+									            <button type="button" class="btn selected" name="button5" onclick="addToCart(5)"> Add To Cart </button>
+								            </div>
+							            </td>
+                                        <!--Product 6 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="images/vj3Ewt2zs4j2Rmk2MP5Z-1_600x-removebg-preview.png" alt="product 6" width="300" height="300">
+                                                <p>Taylor Swift<br>The Eras Tour Red Album T-Shirt</p>
+                                                <p>&#36; 45</p>
+                                                <label for="Q6"> Size: </label>
+                                                <select name="size" id="Q6"> 
+                                                    <option value="small">S</option>
+                                                    <option value="medium">M</option>
+                                                    <option value="large">L</option>
+                                                </select>									
+                                                <label for="quantity6"> Quantity: </label>
+                                                <input type="number" id="quantity6" name="Quantity6" min="0" value="0"> <!-- Input feild for the quantity of Product 6-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button6" onclick="addToCart(6)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!--Product 7 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="images/SharedImage-144234-removebg-preview.png" alt="product 7" width="300" height="300">
+                                                <p>Ariana Grande<br>Yours Truly T-Shirt</p>
+                                                <p>&#36; 35</p>
+                                                <label for="Q7"> Size: </label>
+                                                <select name="size" id="Q7"> 
+                                                    <option value="small">S</option>
+                                                    <option value="medium">M</option>
+                                                    <option value="large">L</option>
+                                                </select>									
+                                                <label for="quantity7"> Quantity: </label>
+                                                <input type="number" id="quantity7" name="Quantity7" min="0" value="0"> <!-- Input feild for the quantity of Product 7-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button7" onclick="addToCart(7)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                        <!--Product 8 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="images/DUA_UNISEX_TEE_1200x-removebg-preview.png" alt="product 8" width="300" height="300">
+                                                <p>Dua Lipa<br>Don't Start Now T-Shirt</p>
+                                                <p>&#36; 25</p>
+                                                <label for="Q8"> Size: </label>
+                                                <select name="size" id="Q8"> 
+                                                    <option value="small">S</option>
+                                                    <option value="medium">M</option>
+                                                    <option value="large">L</option>
+                                                </select>									
+                                                <label for="quantity8"> Quantity: </label>
+                                                <input type="number" id="quantity8" name="Quantity8" min="0" value="0"> <!-- Input feild for the quantity of Product 8-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button8" onclick="addToCart(8)"> Add To Cart </button>
+                                            </div>
+                                        </td>	
+                                    </tr>
+                                </table>	
+                            </div>
+                            <!-- albums -->	
+                            <div id="albums" class="tabcontent">					
+                                <table> 
+                                    <tr> 
+                                        <!--Product 9 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="images/100521_silksonic_productimages_cd-removebg-preview.png" alt="product 9" width="300" height="300">
+                                                <p>Silk Sonic<br>An Evening With Silk Sonic CD</p>
+                                                <p>&#36; 20</p>
+                                                <label for="quantity10"> Quantity: </label>
+                                                <input type="number" id="quantity9" name="Quantity9" min="0" value="0"> <!-- Input feild for the quantity of Product 9-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button9" onclick="addToCart(9)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                        <!--Product 10 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="images/Venus-CD_productshot-cleartray-revise_620x-removebg-preview.png" alt="product 10" width="300" height="300">
+                                                <p>Miley Cyrus<br>Endless Summer Vacation CD</p>
+                                                <p>&#36; 40</p>
+                                                <label for="quantity10"> Quantity: </label>
+                                                <input type="number" id="quantity10" name="Quantity10" min="0" value="0"> <!-- Input feild for the quantity of Product 10-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button10" onclick="addToCart(10)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!--Product 11 -->
+                                        <td>
+                                            <div class="card">
+                                                <img src="images/66466-67923cb9707ba3b9d56a3e8f6f1607bf-removebg-preview.png" alt="product 11" width="300" height="300">
+                                                <p>Katy Perry<br>Smile Deluxe CD</p>
+                                                <p>&#36; 38</p>
+                                                <label for="quantity11"> Quantity: </label>
+                                                <input type="number" id="quantity11" name="Quantity11" min="0" value="0"> <!-- Input feild for the quantity of Product 11-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button11" onclick="addToCart(11)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                        <!--Product 12 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="images//lpc-removebg-preview.png" alt="product 12" width="300" height="300">
+                                                <p>Shawn Mendes<br>WONDER Deluxe Package CD</p>
+                                                <p>&#36; 25</p>
+                                                <label for="quantity12"> Quantity: </label>
+                                                <input type="number" id="quantity12" name="Quantity12" min="0" value="0"> <!-- Input feild for the quantity of Product 12-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button12" onclick="addToCart(12)"> Add To Cart </button>
+                                            </div>
+                                        </td>	
+                                    </tr>	
+                                </table>
+                            </div>
+                            <!-- other products-->	
+                            <div id="other" class="tabcontent">	
+                                <table>			
+                                    <tr> 
+                                        <!--Product 13 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="images/Harry_Styles_-_Golden.png" alt="product 13" width="300" height="300">
+                                                <p>Harry Styles<br>GOLDEN Album Cover Poster</p>
+                                                <p>&#36; 27</p>
+                                                <label for="quantity13"> Quantity: </label>
+                                                <input type="number" id="quantity13" name="Quantity13" min="0" value="0"> <!-- Input feild for the quantity of Product 13-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button13" onclick="addToCart(13)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                        <!--Product 14 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="images/onerepublic_2022_1280x1280_1645773109.jpg" alt="product 14" width="300" height="300">
+                                                <p>One Republic<br>NEVER ENDING SUMMER Tour Poster</p>
+                                                <p>&#36; 25</p>
+                                                <label for="quantity14"> Quantity: </label>
+                                                <input type="number" id="quantity14" name="Quantity14" min="0" value="0"> <!-- Input feild for the quantity of Product 14-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button14" onclick="addToCart(14)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!--Product 15 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="images/4970-7L.CG07v2-1-removebg-preview.png" alt="product 15" width="300" height="300">
+                                                <p>Dua Lipa<br>Gradient Anime Bucket Hat</p>
+                                                <p>&#36; 28</p>
+                                                <label for="quantity15"> Quantity: </label>
+                                                <input type="number" id="quantity15" name="Quantity15" min="0" value="0"> <!-- Input feild for the quantity of Product 15-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button15" onclick="addToCart(15)"> Add To Cart </button>
+                                            </div>
+                                        </td>
+                                        <!--Product 16 -->
+                                        <td>
+                                            <div class="card"> 
+                                                <img src="images/19EDS_TOUR018_BUCKETHATVIS_ONLINE_1024x1024-removebg-preview.png" alt="product 16" width="300" height="300">
+                                                <p>Ed Sheeran<br>DIVIDE Custom Tour Bucket Hat</p>
+                                                <p>&#36; 30</p>
+                                                <label for="quantity16"> Quantity: </label>
+                                                <input type="number" id="quantity16" name="Quantity16" min="0" value="0"> <!-- Input feild for the quantity of Product 16-->
+                                                <br><br>
+                                                <button type="button" class="btn selected" name="button16" onclick="addToCart(16)"> Add To Cart </button>
+                                            </div>
+                                        </td>	
+                                    </tr>
+                                </table>
+                            </div>                                                                                    
+                    </fieldset>
+
+                    <!--Space allocation for the automatic bill-->
+                    <fieldset id="autoBill"> 
+                        <legend>CART</legend><br>
+                            <dl id="bill"></dl>
+                            <P> ******************************************************** </p>
+                            <h3>Total Price : $ <span id="totalPrice">0.00</span></h3>					
+                    </fieldset>
+
+                    <div class="submitBtn">
+                        <input type="submit" id="proceed" class="submit" value="Proceed" disabled onclick="checkCart()">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            //For the tablinks
+            function openPage(pageName,element,color){
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].style.backgroundColor = "";
+                }
+                document.getElementById(pageName).style.display = "block";
+                element.style.backgroundColor = color;
+            }
+    
+            document.getElementById("defaultOpen").click();
+
+        </script>
+        <script src="page_links.js"></script>
+        <!-- footer section -->
+        <div class="footer">
+            <a class="back2top" href="#top">&#9708;</a>
+            <div class="social_media">
+                <a class="fb" href="https://www.facebook.com/profile.php?id=100091327609432">
+                    <span class="tooltiptext">Follow us on Facebook</span>
+                    <img class="social_logo" src="facebook_logo.png" alt="Facebook">
+                </a>
+                <a class="inst" href="http://www.instagram.com/beatzz44">
+                    <span class="tooltiptext">Follow us on Instagram</span>
+                    <img class="social_logo" src="inster_logo.png" alt="Instergram">
+                </a>
+                <a class="twt" href="https://twitter.com/beatzzrckz">
+                    <span class="tooltiptext">Follow us on Twitter</span>
+                    <img class="social_logo" src="tweeter_logo.png" alt="Tweeter">
+                </a>
+            </div>
+            <div class="copyright_text">&copy;2023 BEATZz</div>
+            <div class="pg_editor">
+                <a href="SiteMap.html">Sitemap </a>&VerticalLine;&VerticalLine;<a href="pageEditor(Lenmini).html"> Page Editor</a>
+            </div>
+        </div>
+    </body>
+</html>

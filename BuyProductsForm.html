@@ -1,0 +1,139 @@
+<!-- Name    : Lenmini Sadeera Illangakoon
+     IIT No. : 20220305
+     UoW No. : w1953815  -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+		<title>Checkout</title>
+		<link rel="stylesheet" type="text/css" href="BuyProductsForm.css">
+		<link rel="stylesheet" href="common.css">
+        <script src="buyProducts.js"></script>     
+    </head>
+    <body>
+		<!-- Navigation Bar -->
+        <div id="navi_bar">
+            <img class="home_logo_selected" id="home_logo" src="white_logo2.png" alt="BEATZz">
+            <button class="navi_btn" id="home">HOME</button>
+            <div class="explore_dropdown">
+                <button id="navi_btn_explore" class="navi_btn">EXPLORE</button>
+                <div class="explore_dropdown_content">
+                    <button class="navi_btn_dropdown" id="popCulture">POP CULTURE</button><br>
+                    <button class="navi_btn_dropdown" id="topSongs">TOP SONGS</button><br>
+                    <button class="navi_btn_dropdown" id="bestConcerts">CONCERTS</button><br>
+                    <button class="navi_btn_dropdown" id="awards">AWARDS</button>
+                </div>
+            </div>
+            <button class="navi_btn" id="gallery">GALLERY</button>
+            <button class="navi_btn" id="quiz">QUIZ</button>
+            <button class="selected_btn" id="shop">SHOP</button>
+            <button class="navi_btn" id="contactUs">CONTACT US</button>
+            <button class="navi_btn" id="aboutUs">ABOUT US</button>
+        </div>
+		<form name="buyForm">
+			<div class="form-area">
+				<div class="container">
+					<!--Payment Details-->
+					<fieldset id="PaymentDetails">
+						<legend>Payment details</legend>
+							<label for="cardNo">Card number:</label>
+							<input type="text" id="cardNo" name="cardNo" placeholder="XXXXXXXXXXXXXXXX" required>
+							<br><br>
+							
+							<label for="cardName">Cardholder's name:</label>
+							<input type="text" id="cardName" name="cardName" placeholder="Cardholder's name" required>
+							<br><br>
+							
+							<label for="expiryDate">Expiry date:</label>
+							<input type="month" id="expiryDate" name="expiryDate" required>
+							<br><br>
+							
+							<label for="securityCode">security Code:</label>
+							<input type="text" id="securityCode" name="securityCode" placeholder="XXXX" required>	
+					</fieldset>
+					
+					<!--Billing Address -->
+					<fieldset id="BillingAdress"> 
+						<legend>Billing address</legend>
+							<label for="Fname">First Name:</label>
+							<input type="text" id="Fname" name="Fname" placeholder="First name" required>
+							<br><br>
+							<label for="Lname">Last Name:</label>
+							<input type="text" id="Lname" name="Lname" placeholder="Last name" required>
+							<br><br>
+							<label for="country">Country/Region:</label>
+							<input type="text" id="country" name="country" placeholder="Country/region" required>
+							<br><br>
+							
+							<label for="address">Address:</label>
+							<input type="text" id="address" name="address" placeholder="Address" required>
+							<br><br>
+						
+							<label for="city">Town/City:</label>
+							<input type="text" id="city" name="city" placeholder="Town/City" required>
+							<br><br>
+						
+							<label for="zip">Postcode/Zip:</label>
+							<input type="text" id="zip" name="zip" placeholder="Postcode/Zip" required>
+							<br><br>
+					</fieldset>	
+					
+					<!--Contatct Details-->
+					<fieldset id="ContatctDetails">				
+						<legend>Contact details</legend>
+							<label for="phone">Phone number:</label>
+							<input type="text" id="phone" name="phone" placeholder="Phone number" required>
+							<br><br>
+							
+							<label for="email">Email address:</label>
+							<input type="email" id="email" name="email" placeholder="Email" required>
+							<br><br>
+					</fieldset>
+					
+					<!--Dilvery Details-->
+					<fieldset id="DilveryDetails">				
+						<legend>Dilivery details</legend>	
+						
+							<label for="date">Delivery date:</label>
+							<input type="date" id="date" name="date" >
+							<br><br>
+						
+							<label for="notes">Order notes:</label>
+							<textarea id="notes" name="notes" rows="5" cols="20"></textarea>
+							<br><br>
+					</fieldset>
+					
+					<!--Buttons-->
+					<div class="btn-area">
+						<input class="btn" type="reset" name="cancel" value="Reset">
+						<input class="btn" type="button" name="placeOrder" value="Confirm order" onclick="validate()"> <!--Button to validate the Form details-->	
+					</div>
+				</div>
+			</div>
+        </form>
+        <script src="page_links.js"></script>
+        <!-- footer section -->
+        <div class="footer">
+            <a class="back2top" href="#top">&#9708;</a>
+            <div class="social_media">
+                <a class="fb" href="https://www.facebook.com/profile.php?id=100091327609432">
+                    <span class="tooltiptext">Follow us on Facebook</span>
+                    <img class="social_logo" src="facebook_logo.png" alt="Facebook">
+                </a>
+                <a class="inst" href="http://www.instagram.com/beatzz44">
+                    <span class="tooltiptext">Follow us on Instagram</span>
+                    <img class="social_logo" src="inster_logo.png" alt="Instergram">
+                </a>
+                <a class="twt" href="https://twitter.com/beatzzrckz">
+                    <span class="tooltiptext">Follow us on Twitter</span>
+                    <img class="social_logo" src="tweeter_logo.png" alt="Tweeter">
+                </a>
+            </div>
+            <div class="copyright_text">&copy;2023 BEATZz</div>
+            <div class="pg_editor">
+                <a href="SiteMap.html">Sitemap </a>&VerticalLine;&VerticalLine;<a href="pageEditor(Lenmini).html"> Page Editor</a>
+            </div>
+        </div>
+    </body>
+</html>

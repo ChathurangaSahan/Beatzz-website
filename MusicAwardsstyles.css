@@ -1,0 +1,371 @@
+/*Student Name: T.L.Nayali A. Thalaramba
+    UoW: w1953202
+    IIT: 20220330*/
+	
+body{
+	background-color: black;
+	color: white;
+	margin: 0;
+}
+#topic {
+    background-image: url("BasedOn.webp");
+    background-size:cover;
+    height:100vh;
+    background-position:center;
+    background-color:#000;
+    background-repeat:no-repeat;
+    background-attachment:fixed;  
+}
+#topic h1{
+	font-size: 120px;
+    font-weight: 500;
+    color: #fff;
+    animation: fadein 3s;
+    transition: 0.5s;
+    letter-spacing: 5px;
+    text-align: center;
+	padding-top: 280px;
+}
+#topic h1:hover{
+	-webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+h1{
+    font-size:80px;
+    font-weight:500;
+    text-align: center;
+    padding-top: 280px;
+    color:white;
+    font-family:"Playfair Display","Open Sans", "sans-serif";
+	text-shadow: 5px 5px black;
+}
+
+.inSiteNav{
+    background-color: #000;
+    border: solid 1px #ad7b23;
+    padding:20px;
+    margin-top: 10px;
+}
+
+.inSiteNav a{
+    font-family:"Playfair Display";
+    color:#fff;
+    width: 100%;
+    line-height:0px;
+    font-size:20px;
+    text-align: center;
+    text-decoration:none;
+    display: inline;
+    padding: 20px 80px;
+    margin-left: 90px;
+}
+
+.inSiteNav a:link{
+    color:#ad7b23;
+}
+  
+.inSiteNav a:hover{
+    color:#ad7b23;
+    text-decoration:underline;
+    cursor:pointer;
+    transition:0.3s;
+    border-radius:8px;
+}
+   
+.inSiteNav a:visited{
+    color:#ad7b23;
+}
+  
+.inSiteNav a:active{
+    background-color:#1c1e1f;
+    color:#ad7b23;
+}
+
+.sub_topic{
+    background-size:cover;
+    height:90vh;
+    background-position:center;
+    background-color:#000;
+    background-repeat:no-repeat;
+    background-attachment:fixed;  
+}
+
+#GRAMMYs .sub_topic{
+    background-image: url("GrammyBack.jpg");
+}
+
+#Juno .sub_topic{
+    background-image: url("juno.jpg");
+}
+
+#Billboard .sub_topic{
+    background-image: url("Bill.jpg");	
+}
+
+#Brit .sub_topic{
+    background-image: url("Britback.jpg");
+}
+
+/*Grammys css*/
+section#GRAMMYs{
+	height: 2700px;
+}
+.introImage_GRAMMYs{
+	width: 30%;
+	padding:75x 50px 75px 120px;
+}
+
+.introImage_GRAMMYs img{
+	float: left;
+	margin: 0px auto;
+	border-radius: 5px;
+	height: 250px;
+	width: 500px ;
+	padding: 10px 0px 0px 0px;
+
+}
+
+.AdeleImage img{
+	float: right;
+	margin: 0px auto;
+	border-radius: 5px;	
+	padding:25px 0px 25px 0px;
+	height: 300px;
+	width: 400px;
+}
+
+.Adele_GRAMMYs h2{
+	text-align: center;
+	font-size: xx-large;
+	text-shadow: 5px 5px magenta;
+}
+
+.introParagraph_GRAMMYs{
+	float: right;
+	width: 50%;
+	padding: 0 25px 25px 50px;
+}
+.introParagraph_GRAMMYs h2{
+	font-size: xx-large;
+	text-align: center;
+}
+
+.introParagraph_GRAMMYs p{
+	text-align: justify;
+	line-height: 40px;
+	font-size: xx-large;
+}
+
+.Adele_GRAMMYs{
+	float: left;
+	width: 50%;
+	padding:10px 50px 10px 200px;
+	text-align: right;
+}
+.Adele_GRAMMYs p{
+	font-size: xx-large;
+}
+.HarryImage img{
+	float: left;
+	margin: 0px auto;
+	border-radius: 5px;	
+	padding:30px 20px;
+	height: 300px;
+	width: 400px;
+}
+.Harry_GRAMMYs{
+	float: right;
+	width: 50%;
+	padding:20px 50px 20px 20px;
+	text-align: left;
+}
+.Harry_GRAMMYs p{
+	font-size: xx-large;
+}
+
+.Harry_GRAMMYs h2{
+	text-align: center;
+	font-size: xx-large;
+	text-shadow: 5px 5px purple;
+
+}
+.SamImage img{
+	float: right;
+	margin: 0px auto;
+	border-radius: 5px;	
+	padding:30px 20px 10px 200px;
+	height: 300px;
+	width: 400px;
+}
+.Sam_GRAMMYs{
+	float: right;
+	width: 50%;
+	padding:30px 20px;
+	text-align: right;
+}
+.Sam_GRAMMYs p{
+	font-size: xx-large;
+}
+.Sam_GRAMMYs h2{
+	text-align: center;
+	font-size: xx-large;
+	text-shadow: 5px 5px blue;
+}
+.LatinImage img{
+	float: left;
+	margin: 0px auto;
+	border-radius: 5px;	
+	padding:50px 200px 20px 20px;
+	height: 300px;
+	width: 400px;
+}
+.Latin_GRAMMYs{
+	float: left;
+	width: 50%;
+	padding:30px 20px;
+	text-align: left;
+}
+.Latin_GRAMMYs p{
+	font-size: xx-large;
+}
+.Latin_GRAMMYs h2{
+	text-align: center;
+	font-size: xx-large;
+	text-shadow: 5px 5px magenta;
+}
+.QBImage img{
+	float:right;
+	margin: 0px auto;
+	border-radius: 5px;	
+	padding:40px 300px 10px 20px;
+	height: 400px;
+	width: 800px;
+}
+.QB_GRAMMYs{
+	float: left;
+	width: 50%;
+	padding:30px 20px 30px 400px;
+}
+.QB_GRAMMYs p{
+	font-size: xx-large;
+}
+.QB_GRAMMYs h2{
+	text-align: center;
+	font-size: xx-large;
+	text-shadow: 5px 5px purple;
+}
+
+/*Juno CSS*/
+section#Juno{
+	height: 850px;
+}
+#Juno h2{
+	padding-top:70px}
+
+.introImg {
+	width: 30%;
+	padding: 50px;
+	height:100px;
+	float: left;
+}
+
+.introPara{
+	width: 50%;
+	float: right;
+	padding: 40px 30px 80px 30px;
+	text-align: right;
+}
+.introPara p{
+	font-size: xx-large;
+	text-align: justify;
+	line-height: 40px;
+
+}
+
+.introImg img{
+	float: right;
+	margin: 0px auto;
+	border-radius: 5px;	
+	float: left;
+	height: 250px;
+	width: 900px;
+}
+
+/*Billboard css*/
+section#Billboard{
+	height: 900px;
+}
+.intro-content{
+	width: 50%;
+	padding: 50px 40px 0px 40px;
+	float: left;
+}
+
+.intro-content p{
+	text-align: justify;
+	line-height: 40px;
+	font-size: xx-large;
+}
+
+
+#introduction_Billboard{
+	height: 500px;
+    padding-bottom: 260px;
+	float: right;
+}
+
+.BillImg{
+	width: 30%;
+	padding: 70px;
+	float:right;
+}
+
+.BillImg img{
+	float: left;
+	margin: 0px auto;
+	border-radius: 5px;	
+	height: 250px;
+	width: 800px;
+}
+
+
+
+
+/*brit css*/
+section#Brit{
+	height: 400px;
+}
+
+
+#introduction_Brit{
+	height: 300px;
+    padding-bottom: 100px;
+}
+
+.introImage_Brit{
+	width: 40%;
+	padding: 70px;
+}
+
+.introImage_Brit img{
+	float: left;
+	margin: 0px auto;
+	border-radius: 5px;	
+	height: 300px;
+	width: 600px;
+}
+
+.introParagraph_Brit{
+	float: right;
+	width: 50%;
+	padding: 20px 50px 100px 20px;
+}
+
+.introParagraph_Brit p{
+	text-align: justify;
+	line-height: 35px;
+	font-family:"Playfair Display","Open Sans", "sans-serif";
+	font-size: xx-large;
+}
+

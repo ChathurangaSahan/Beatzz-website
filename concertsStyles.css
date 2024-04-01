@@ -1,0 +1,120 @@
+/* Savith Kandegedara
+UOW no - W1953230 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;                 /*changing the default margins and paddings */
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;       
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+/*Main topic area styles*/
+.banner-area{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content-area{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 80px;
+    font-weight: 500;
+    color: #fff;
+}
+.content p{
+    font-size: 30px;
+    color: #ddd;
+}
+/*concerts internal navigation bar styles*/
+.concertList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #000;
+}
+.concertList ul li{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ddd;
+    list-style-type: none;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.concertList ul li a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #ddd;
+    transition: all 0.5s ease 0s;
+}
+.concertList ul li a:hover{
+    color: #a182fe;
+}
+/*content styles*/
+.concertBox{
+    font-size: 20px;
+    margin: 150px 100px 00px 100px;
+}
+.concertDetails{
+    width: 50%;
+}
+.concertDetails p{
+    text-align: justify;
+}
+.concertImgs{
+    text-align: right;
+    position: relative;
+    bottom: 280px;
+}
+.concertImgs img{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px #000 solid;
+    box-shadow: 5px 5px 11px rgba(0,0,0,0.8);
+    transition: all 0.5s ease 0s;
+}
+.concertImgs img:hover{
+    transform: translateY(-10px);
+}
+#concert2, #concert3, #concert4{
+    margin-top: 0px;
+}
+#concert2 .concertImgs, #concert4 .concertImgs{
+    text-align: left;
+    position: relative;
+    bottom: 300px;
+}
+#concert2 .concertDetails, #concert4 .concertDetails{
+    padding-left: 750px;
+    width: 100%;
+    text-align: right;
+    position: relative;
+}
+/* setting up animation  */
+@keyframes fadein {
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 100;
+        transform: translateY(0px);
+    }
+    
+}

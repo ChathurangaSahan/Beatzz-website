@@ -1,0 +1,161 @@
+<!-- Savith Kandegedara
+UOW no - W1953230 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="galleryStyle.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <!-- navigation bar section -->
+  <div id="navi_bar">
+    <img class="home_logo_selected" id="home_logo" src="white_logo2.png" alt="BEATZz">
+    <button class="navi_btn" id="home">HOME</button>
+    <div class="explore_dropdown">
+        <button id="navi_btn_explore" class="navi_btn">EXPLORE</button>
+        <div class="explore_dropdown_content">
+            <button class="navi_btn_dropdown" id="popCulture">POP CULTURE</button><br>
+            <button class="navi_btn_dropdown" id="topSongs">TOP SONGS</button><br>
+            <button class="navi_btn_dropdown" id="bestConcerts">CONCERTS</button><br>
+            <button class="navi_btn_dropdown" id="awards">AWARDS</button>
+        </div>
+    </div>
+    <button class="selected_btn" id="gallery">GALLERY</button>
+    <button class="navi_btn" id="quiz">QUIZ</button>
+    <button class="navi_btn" id="shop">SHOP</button>
+    <button class="navi_btn" id="contactUs">CONTACT US</button>
+    <button class="navi_btn" id="aboutUs">ABOUT US</button>
+</div>
+<!-- this is the main topic area -->
+  <div class="banner-area">
+    <div class="content-area" id="top">
+        <div class="content">
+            <h1 class="main_topic animation_h1">TOP ARTISTS</h1>
+            <p class="sub_topic animation_h2">Discover Top 5 artists</p>
+        </div>
+    </div>
+  </div>
+  <div class="topic">
+    <h2 id="topic1">TOP 5 POP ARTISTS END OF 2022</h2>
+  </div>
+  <!-- this area is for changing the theme of the webpage and changing the font size of the image container -->
+  <div class="themeArea">
+    <div class="textEditor">
+      <p><b>TEXT</b></p>
+      <button id="smallTxt" onclick="smallTxtMode()">A</button>
+      <button id="mediumTxt" onclick="mediumTxtMode()">A</button>
+      <button id="largeTxt" onclick="largeTxtMode()">A</button>
+    </div>
+    <P id="th"><b>THEME</b></P> 
+    <button id="darkTheme" onclick="turnDarkMode()"></button>
+    <button id="lightTheme" onclick="turnLightMode()"></button>
+    <button id="copperTheme" onclick="turnCopperMode()"></button>
+    <button id="randomTheme" onclick="RandomclrGen()"></button>
+  </div>
+  <!-- thumbnail section with description-->
+  <div class="row">
+    <div class="column">
+      <img id="BillieE" src="artistsPics/artist1.png" alt="Billie"  onmouseover="Openup(this);">
+      <div id="BillE">
+        <div class="details">
+          <h1>Billie Eilish</h1>
+          <p>
+            With her unique sound and introspective lyrics, Billie Eilish has become one of the most popular pop artists in recent years.Her debut album <strong>"When We All Fall Asleep</strong> won multiple Grammys. 
+          </p>
+          <br>
+          <p>
+            <strong>Best songs: </strong>Bad Guy, Everything I Wanted, When The Party's Over...
+          </p>
+      </div>
+      </div>
+    </div>
+    <div class="column">
+      <img id="Taylor" src="artistsPics/artist2.png" alt="Taylor"  onmouseover="Openup(this);">
+      <div id="Tay">
+        <div class="details">
+          <h1>Taylor Swift</h1>
+          <p>
+            With her storytelling lyrics and catchy melodies, Taylor Swift has become a pop music icon.
+          </p><br>
+          <p>
+            <strong>Best songs: </strong>Love Story, Paper Rings, Blank Space...
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <img id="HarryS" src="artistsPics/artist3.png" alt="Harry"  onmouseover="Openup(this);">
+      <div id="Har">
+        <div class="details">
+          <h1>Harry Styles</h1>
+          <p>
+            After leaving the boy band One Direction, Harry Styles has become a successful solo artist.His music blends pop, rock, and folk influences and has earned him critical acclaim.
+          </p><br>
+          <p>
+            <strong>Best songs: </strong>As It Was, Watermelon Sugar,Adore You...
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <img id="DuaLipa" src="artistsPics/artist4.png" alt="DuaLipa"  onmouseover="Openup(this);">
+      <div id="DuaL">
+        <div class="details">
+          <h1>Dua Lipa</h1>
+          <p>
+            Dua Lipa has become one of the most successful pop artists in recent years. Her sophomore album <strong>"Future Nostalgia"</strong> won the Grammy award for Best Pop Vocal Album.
+          </p><br>
+          <p>
+            <strong>Best songs: </strong>New Rules, Levitating, Don't Start Now...
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <img id="Ariana" src="artistsPics/artist5.png" alt="Ariana"  onmouseover="Openup(this);">
+      <div id="Ari">
+        <div class="details">
+          <h1>Ariana Grande</h1>
+          <p>
+            With her powerful vocals and catchy pop songs, Ariana Grande has become a pop music icon. Her most recent album <strong>"Positions"</strong> showcases her versatility as an artist.
+          </p><br>
+          <p>
+            <strong>Best songs: </strong>Positions, One Last time, 7 Rings...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- image container that pops up when hover over the thumbnails -->
+  <div class="imgcontainer">
+    <img src="#" id="expandedImg"  alt="expandedImageOfThumbnail">
+    <div id="details"></div>
+  </div>
+  <script src="gallery.js"></script>
+  <script src="page_links.js"></script>
+  <!-- footer section -->
+  <div class="footer">
+    <a class="back2top" href="#top">&#9708;</a>
+    <div class="social_media">
+        <a class="fb" href="https://www.facebook.com/profile.php?id=100091327609432">
+            <span class="tooltiptext">Follow us on Facebook</span>
+            <img class="social_logo" src="facebook_logo.png" alt="Facebook">
+        </a>
+        <a class="inst" href="http://www.instagram.com/beatzz44">
+            <span class="tooltiptext">Follow us on Instagram</span>
+            <img class="social_logo" src="inster_logo.png" alt="Instergram">
+        </a>
+        <a class="twt" href="https://twitter.com/beatzzrckz">
+            <span class="tooltiptext">Follow us on Twitter</span>
+            <img class="social_logo" src="tweeter_logo.png" alt="Tweeter">
+        </a>
+    </div>
+    <div class="copyright_text">&copy;2023 BEATZz</div>
+    <div class="pg_editor">
+        <a href="SiteMap.html">Sitemap </a>&VerticalLine;&VerticalLine;<a href="pageEditor(Savith).html"> Page Editor</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/*   Name    : Lenmini Sadeera Illangakoon
+     IIT No. : 20220305
+     UoW No. : w1953815 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap'); 
+body{
+	background-image:url(BLkE.gif);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: cover;
+	}
+	
+h1 {
+	padding-top:30px;
+	font-size:170px;
+	font-weight: bold;
+	color:#FFF;
+	text-align:center;
+	}
+	
+#navlist li {
+	display: inline;
+	color: #FFF;
+	font-size: 28px;
+	padding-left: 60px;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+}
+.footer{
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 20px;
+    font-weight: 1000;
+}
