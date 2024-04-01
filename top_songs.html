@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- linking css files -->
+        <link rel="stylesheet" href="navi_bar.css">
+        <link rel="stylesheet" href="top_song_topic.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="common.css">
+        <title>TOP SONGS</title>
+    <body>
+        <!-- creating a body cantainer using div -->
+        <div class="top_song_container">
+            <!-- using navigation bar fron mainpage -->
+            <div id="navi_bar">
+                <img class="home_logo_selected" id="home_logo" src="white_logo2.png" alt="BEATZz">
+                <button class="navi_btn" id="home">HOME</button>
+                <div class="explore_dropdown">
+                    <!-- changing class of explore to selected_btn to apply styles of selected button with respect to current page -->
+                    <button id="navi_btn_explore" class="selected_btn">EXPLORE</button>
+                    <div class="explore_dropdown_content">
+                        <button class="navi_btn_dropdown" id="popCulture">POP CULTURE</button><br>
+                        <!-- changing style of button representing current page -->
+                        <button class="navi_btn_dropdown_selected" id="topSongs">TOP SONGS</button><br>
+                        <button class="navi_btn_dropdown" id="bestConcerts">CONCERTS</button><br>
+                        <button class="navi_btn_dropdown" id="awards">AWARDS</button>
+                    </div>
+                </div>
+                <button class="navi_btn" id="gallery">GALLERY</button>
+                <button class="navi_btn" id="quiz">QUIZ</button>
+                <button class="navi_btn" id="shop">SHOP</button>
+                <button class="navi_btn" id="contactUs">CONTACT US</button>
+                <button class="navi_btn" id="aboutUs">ABOUT US</button>
+            </div>
+            <!-- creating welcome screen in div -->
+            <div id="top" class="top_songs_welcome_screen">
+                <div class="top_songs_welcome_screen_text main_topic">
+                    <h1 class="animation_h1">TOP SONGS</h1>
+                    <h3 class="animation_h2">BEST POP SONGS OF ALL TIME...</h3>
+                </div>
+            </div>
+            <!-- creating an introduction to page within div -->
+            <div class="intro content_text">
+                <p>
+                    <br><br>
+                    Welcome to the world of Pop music, where catchy tunes, upbeat rhythms, 
+                    and relatable lyrics come together to create the ultimate musical experience. 
+                    Pop music has been around for decades, and it continues to dominate the airwaves 
+                    and charts with its infectious beats and melodic hooks.
+                    <br><br>
+                </p>
+                <p>
+                    From the smooth vocals of Ariana Grande to the dynamic performances of BTS, 
+                    Pop music has something for everyone. Whether you're dancing in the club, 
+                    singing in the shower, or driving with the windows down, 
+                    Pop music is the perfect soundtrack to your life.
+                    <br><br>
+                </p>
+                <p>
+                    So here's are the top pop song lists with high-energy anthems to heartfelt ballads, 
+                    these songs will have you tapping your feet, swaying your hips, 
+                    and singing your heart out.
+                    <br>
+                </p>
+                <!-- creating links to sub topics within page -->
+                <div class="sub_topic_links">
+                    <ul>
+                        <li>
+                            <a href="#com_topic">
+                                Top 10 Most Commercially Successfull Songs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#lis_topic">
+                                Top 10 Most Listened To Songs 
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+            <!-- creating a div to contain content -->
+            <div class="song_list">
+                <!-- using seperate div for different sub topics -->
+                <h1 id="com_topic" class="sub_topic"><br>&middot; Top 10 Most Commercially Successfull Songs &middot;<br><br></h1>
+                <div id="commercial_list" class="top10_list">
+                    <!-- creating a container for sub topics content -->
+                    <div class="song_container">
+                        <!-- using a 'entry' class to facilitate content of sub topic -->
+                        <div class="entry">
+                            <div class="num">#1</div>
+                            <div class="album_cover"><img class="cover_pic" src="white_christmas.jpg" alt="WC"></div>
+                            <div class="details">
+                                <h1 class="sub_topic">White Christmas</h1>
+                                <h2 class="content_text">by Bing Crosby</h2>
+                                <h2 class="content_text">Over 50 million copies sold worldwide</h2>
+                            </div>
+                            <div class="visit">
+                                <!-- creating a link to spotify link of respective song -->
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/4so0Wek9Ig1p6CRCHuINwW?si=61376ebe90344e2f';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <!-- creating a div containing the details of song. will only be displayed when hovering over respective entry -->
+                        <div class="about_song content_text">
+                            <p>
+                                "White Christmas" is a popular Christmas song written by Irving Berlin and first recorded 
+                                by Bing Crosby in 1942. It is one of the best-selling singles of all time, with estimated 
+                                sales in excess of 50 million copies worldwide.
+                                <br><br>
+                                "White Christmas" became an instant classic upon its release in 1942, and it has remained a 
+                                beloved holiday staple ever since. The song's popularity was further solidified by the 1954 
+                                film of the same name, which starred Crosby and featured several of his recordings of Christmas 
+                                songs, including "White Christmas."
+                                <br><br>
+                                In addition to its commercial success, "White Christmas" has also been recognized with 
+                                several prestigious awards. It won the Academy Award for Best Original Song in 1942, 
+                                and it has been inducted into the Grammy Hall of Fame and the National Recording Registry.
+                                <br><br>
+                                Overall, "White Christmas" is a timeless holiday pop classic that continues to be enjoyed by 
+                                audiences around the world every holiday season.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- the same process of above song_container repeats for all ten songs -->
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#2</div>
+                            <div class="album_cover"><img class="cover_pic" src="something_about.jpg" alt="SA"></div>
+                            <div class="details">
+                                <h1 class="sub_topic">Something About the Way You Look Tonight</h1>
+                                <h2 class="content_text">by Elton John</h2>
+                                <h2 class="content_text">Over 33 million copies sold worldwide</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/4l4mSq8IKgCMz0q9KFZ7tK?si=2332dfe0c7cf4023';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "Something About the Way You Look Tonight" is a song by British musician Elton John, 
+                                released as a double A-side single with "Candle in the Wind 1997" in 1997. The song 
+                                was written by Elton John and his longtime collaborator, lyricist Bernie Taupin. It 
+                                went on to become one of Elton John's biggest hits, reaching number one on the UK 
+                                Singles Chart and the Billboard Hot 100 in the United States.
+                                <br><br>
+                                "Something About the Way You Look Tonight" was originally written for a friend's 
+                                wedding, but it quickly became clear that it had hit potential. In addition to 
+                                its commercial success, the song was also critically acclaimed, winning the 1998 
+                                Grammy Award for Best Male Pop Vocal Performance.
+                                <br><br>
+                                Overall, "Something About the Way You Look Tonight" is a timeless classic that 
+                                showcases Elton John's songwriting and performing abilities, as well as his 
+                                enduring popularity with audiences around the world.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#3</div>
+                            <div class="album_cover"><img class="cover_pic" src="rock_arounf.jpg" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">Rock Around the Clock</h1>
+                                <h2 class="content_text">by Bill Haley & His Comets</h2>
+                                <h2 class="content_text"> Over 25 million copies sold worldwide</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/34AmZ4PMz9iNZVp9AMIGZj?si=dfe976f808394d00';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "Rock Around the Clock" is a seminal rock and roll song by Bill Haley & His Comets, released 
+                                in 1954. It is widely considered one of the most important and influential songs in the history 
+                                of rock and roll.
+                                <br><br>
+                                The song was written by Max C. Freedman and James E. Myers, and was recorded by Bill Haley & 
+                                His Comets on April 12, 1954. The song was first released as a B-side to "Thirteen Women 
+                                (And Only One Man in Town)," but it quickly became the more popular of the two songs. 
+                                The song has been covered by numerous artists over the years, and it remains a beloved classic 
+                                of rock and roll music.
+                                <br><br>
+                                In addition to its musical influence, "Rock Around the Clock" also had a significant impact on 
+                                popular culture. The song became a symbol of teenage rebellion and youthful exuberance, and it 
+                                helped to establish rock and roll as a cultural force.
+                                <br><br>
+                                Overall, "Rock Around the Clock" is a groundbreaking and influential song that helped to shape 
+                                the course of popular music and culture in the 20th century.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#4</div>
+                            <div class="album_cover"><img class="cover_pic" src="i_will_always.png" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">I Will Always Love You</h1>
+                                <h2 class="content_text">by Whitney Houston</h2>
+                                <h2 class="content_text">Over 20 million copies sold worldwide</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/4eHbdreAnSOrDDsFfc4Fpm?si=15c44167dd2d4906';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "I Will Always Love You" is a powerful ballad originally written and recorded by American 
+                                singer-songwriter Dolly Parton in 1974. However, it was Whitney Houston's version of the 
+                                song that propelled it to worldwide fame and became one of the most iconic songs of all time.
+                                <br><br>
+                                Houston's version of "I Will Always Love You" was recorded for the soundtrack of the 1992 
+                                romantic drama film "The Bodyguard," in which she starred alongside Kevin Costner. The 
+                                song was released as a single on November 3, 1992, and quickly became a commercial success, 
+                                reaching the top of the charts in multiple countries and earning Houston numerous accolades, 
+                                including two Grammy Awards.
+                                <br><br>
+                                Overall, "I Will Always Love You" remains a beloved and timeless classic, and Whitney 
+                                Houston's version of the song continues to inspire and move listeners to this day.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#5</div>
+                            <div class="album_cover"><img class="cover_pic" src="its_now_or_never.jpg" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">It's Now or Never</h1>
+                                <h2 class="content_text">by Elvis Presley</h2>
+                                <h2 class="content_text">Over 10 million copies sold worldwide</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/1XunTmhOcj3xwh4b8P3isX?si=fde5c5f290d649cb';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "It's Now or Never" is a popular song recorded by Elvis Presley in 1960. The song was written 
+                                by Aaron Schroeder and Wally Gold, with lyrics by Wally Gold and published by RCA Victor. 
+                                It was recorded at RCA Studios in Nashville, Tennessee, and released as a single in July 1960. 
+                                The song became an instant hit, reaching number one on the U.S. Billboard Hot 100 chart 
+                                and the UK Singles Chart.
+                                <br><br>
+                                Since its release, "It's Now or Never" has become a beloved classic, and has been covered by 
+                                numerous artists across a wide range of genres. It has been featured in films, television shows, 
+                                and commercials, and has been recognized as one of the most enduring and iconic pop songs.
+                                <br><br>
+                                Overall, "It's Now or Never" is a timeless classic that showcases Elvis Presley's incredible 
+                                talent and enduring legacy as one of the greatest singers of all time. Its sweeping melody, 
+                                powerful lyrics, and emotive performance make it a must-listen for fans of early rock and 
+                                roll and romantic ballads alike.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#6</div>
+                            <div class="album_cover"><img class="cover_pic" src="i_want_to_hold.jpg" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">I Want to Hold Your Hand</h1>
+                                <h2 class="content_text">by The Beatles</h2>
+                                <h2 class="content_text">Over 12 million copies sold worldwide</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/5J3Mf6dyqeGy67yuQ7ql9B?si=ecdbf3a521014c30';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "I Want to Hold Your Hand" is a classic love song performed by the legendary British band The Beatles. 
+                                The song was written by John Lennon and Paul McCartney and was released in 1963 as a single, 
+                                marking the beginning of their rise to fame in the United States.
+                                <br><br>
+                                The song was a massive commercial success, topping the charts in both the UK and US, and becoming 
+                                one of the best-selling singles of all time. Its popularity and cultural impact have endured over 
+                                the decades, and it remains a beloved classic in The Beatles' catalog.
+                                <br><br>
+                                Overall, "I Want to Hold Your Hand" is a timeless love song that showcases The Beatles' signature 
+                                sound and songwriting abilities. Its catchy melody, memorable lyrics, and innovative production have 
+                                helped make it a pop music classic.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#7</div>
+                            <div class="album_cover"><img class="cover_pic" src="hey_jude.jpg" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">Hey Jude</h1>
+                                <h2 class="content_text">by The Beatles</h2>
+                                <h2 class="content_text">Over 10 million copies sold worldwide</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/1eT2CjXwFXNx6oY5ydvzKU?si=b504bfd3810f4f5e';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "Hey Jude" is a song by the legendary English rock band The Beatles. It was written by Paul 
+                                McCartney and released in August 1968 as a single with "Revolution" as the B-side. The song's 
+                                production was overseen by Beatles producer George Martin. The song was recorded in a single take 
+                                with a massive choir and orchestra, giving it a grand and powerful sound.
+                                <br><br>
+                                "Hey Jude" has been covered by numerous artists over the years and has become a cultural 
+                                touchstone. It has been inducted into the Grammy Hall of Fame and was ranked number eight 
+                                on Rolling Stone's list of the 500 Greatest Songs of All Time.
+                                <br><br>
+                                Overall, "Hey Jude" is a timeless classic that showcases The Beatles' songwriting and musical 
+                                prowess and continues to inspire and captivate audiences more than 50 years after its release.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#8</div>
+                            <div class="album_cover"><img class="cover_pic" src="everything_i_do.jpg" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">Everything I Do (I Do It for You)</h1>
+                                <h2 class="content_text">by Bryan Adams</h2>
+                                <h2 class="content_text">Over 8 million copies sold worldwide</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/1Eb90nmqTrxylKFhcUzW8P?si=c128ae2d72934d9c';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "Everything I Do (I Do It for You)" is a power ballad song performed by Canadian singer-songwriter Bryan Adams. 
+                                The song was released on June 18, 1991, as a single from the soundtrack of the film "Robin Hood: Prince of 
+                                Thieves." It was written by Adams, Michael Kamen, and Robert John "Mutt" Lange.
+                                <br><br>
+                                The song became an instant hit, reaching number one on the charts in multiple countries, including the United States, 
+                                Canada, and the United Kingdom. It also won a Grammy Award for Best Song Written Specifically for a Motion Picture or for Television.
+                                <br><br>
+                                "Everything I Do (I Do It for You)" remains one of Adams' most popular and enduring songs, and has been 
+                                covered by numerous artists over the years. Its popularity has also led to its inclusion in various films, 
+                                television shows, and commercials, cementing its status as a classic love song.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#9</div>
+                            <div class="album_cover"><img class="cover_pic" src="physical.jpg" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">Physical</h1>
+                                <h2 class="content_text">by Olivia Newton-John</h2>
+                                <h2 class="content_text">Over 10 million copies sold worldwide</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/4gitetlGHZ9LfuJhwUhEhF?si=b366dead4ca84dfd';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "Physical" is a hit song performed by Australian singer Olivia Newton-John, released in 1981 as the 
+                                lead single from her twelfth studio album of the same name. The song was written by Steve Kipner 
+                                and Terry Shaddick, and produced by John Farrar.
+                                <br><br>
+                                The song was a massive commercial success, spending ten weeks at number one on the US Billboard 
+                                Hot 100 chart and becoming one of the biggest hits of the 1980s. It also topped the charts in 
+                                Canada and Australia, and reached the top ten in several other countries.
+                                <br><br>
+                                Despite its commercial success, "Physical" also generated controversy at the time for its overtly 
+                                sexual lyrics and imagery, which some critics felt were inappropriate for a mainstream pop song. 
+                                However, the song's popularity and enduring legacy have ensured that it remains a beloved 
+                                classic of 1980s pop music to this day.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#10</div>
+                            <div class="album_cover"><img class="cover_pic" src="you_light.jpg" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">You Light Up My Life</h1>
+                                <h2 class="content_text">by Debby Boone</h2>
+                                <h2 class="content_text">Over 7 million copies sold worldwide</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/3dFR132gzO8jxD57R2gid3?si=919f408a30d1401a';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "You Light Up My Life" is a song originally composed by Joseph Brooks for the film of the same 
+                                name in 1977. The song was performed by Kasey Cisyk in the film and was later re-recorded by Debby 
+                                Boone, who released it as a single in the same year. The song became a huge hit, spending ten 
+                                consecutive weeks at number one on the Billboard Hot 100 chart and earning Boone a Grammy Award 
+                                for Best New Artist in 1978.
+                                <br><br>
+                                Despite its success, the song and its composer, Joseph Brooks, were later the subject of controversy 
+                                when Brooks was accused of multiple counts of sexual assault and harassment. He was convicted of rape 
+                                in 2009 and committed suicide in 2011 while awaiting sentencing.
+                                <br><br>
+                                Despite the controversy, "You Light Up My Life" remains a beloved classic and a staple of pop songs and romantic 
+                                ballads. Its enduring popularity is a testament to the power of its message and the beauty of 
+                                Debby Boone's performance.
+                            </p>
+                        </div>
+                    </div>   
+                </div>
+                <!-- adding the topic of second song list -->
+                <h1 id="lis_topic" class="sub_topic"><br>&middot; Top 10 Most Listened To Songs &middot;<br><br></h1>
+                <!-- giving a unique id to have different color scheme from previuos list -->
+                <!-- all other html, css and javascript follow similar format to previous list -->
+                <div id="listened_list" class="top10_list">
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#1</div>
+                            <div class="album_cover"><img class="cover_pic" src="shape_of.png" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">Shape of You</h1>
+                                <h2 class="content_text">by Ed Sheeran</h2>
+                                <h2 class="content_text">Over 4.8 billion streams on Spotify alone</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3?si=daa8c35c261c4b5f';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "Shape of You" is a song by English singer-songwriter Ed Sheeran. It was released as a digital download 
+                                on January 6, 2017, as one of the lead singles from his third studio album "÷" (pronounced "divide"). 
+                                The song was written by Sheeran, Steve Mac, and Johnny McDaid, and produced by Sheeran and Mac.
+                                <br><br>
+                                "Shape of You" was a commercial success, topping the charts in over 30 countries, including the US 
+                                Billboard Hot 100, the UK Singles Chart, and the Australian ARIA chart. It was also the best-selling 
+                                song of 2017 worldwide. The song has been certified Diamond in the US, meaning it has sold over 10 million units.
+                                <br><br>
+                                The song has been covered by many artists and has also been parodied in various ways. It has been 
+                                praised for its catchy melody and upbeat production. Overall, "Shape of You" remains one of 
+                                Ed Sheeran's most popular and recognizable songs.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#2</div>
+                            <div class="album_cover"><img class="cover_pic" src="despacito.jpg" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">Despacito</h1>
+                                <h2 class="content_text">by Luis Fonsi ft. Daddy Yankee</h2>
+                                <h2 class="content_text">Over 7.5 billion streams on Spotify alone</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb?si=8d3fdc3c34ab4bd3';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div> 
+                        <div class="about_song content_text">
+                            <p>
+                                "Despacito" is a Spanish-language reggaeton song recorded by Puerto Rican singer Luis Fonsi, featuring Puerto 
+                                Rican rapper Daddy Yankee. The song was written by Luis Fonsi, Daddy Yankee, Erika Ender, and produced by 
+                                Andrés Torres and Mauricio Rengifo.
+                                <br><br>
+                                The song was released on January 13, 2017, and quickly became a global phenomenon, topping charts in over 
+                                40 countries, including the United States, where it spent 16 consecutive weeks at number one on the Billboard 
+                                Hot 100 chart. It became the first song primarily in Spanish to top the chart since the "Macarena" in 1996.
+                                <br><br>
+                                The success of "Despacito" has been attributed to its catchy melody, infectious beat, and crossover 
+                                appeal, as it successfully blends Latin rhythms with pop sensibilities. It has become a cultural phenomenon, 
+                                spawning countless covers, parodies, and remixes, including a popular remix featuring Justin Bieber.
+                                <br><br>
+                                Overall, "Despacito" has been a huge success, breaking records and crossing cultural barriers 
+                                to become one of the most popular songs of all time.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#3</div>
+                            <div class="album_cover"><img class="cover_pic" src="uptown_funk.jpg" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">Uptown Funk</h1>
+                                <h2 class="content_text">by Mark Ronson ft. Bruno Mars</h2>
+                                <h2 class="content_text">Over 4.2 billion streams on Spotify alone</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/32OlwWuMpZ6b0aN2RZOeMS?si=c9b9b798fcf84508';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "Uptown Funk" is a hit single by English producer Mark Ronson, featuring American singer Bruno Mars. 
+                                The song was released on November 10, 2014, as the lead single from Ronson's fourth studio album, 
+                                "Uptown Special." It became a massive commercial success, peaking at number one in several countries, 
+                                including the United States, the United Kingdom, Australia, Canada, and many others.
+                                <br><br>
+                                The song was written by Mark Ronson, Bruno Mars, Philip Lawrence, Jeff Bhasker, and Nicholas Williams. 
+                                It has a retro-inspired funk and R&B sound, with influences from 1980s electro-funk and early 1990s 
+                                hip-hop. The track features a horn section, funky bassline, and a catchy chorus that pays tribute 
+                                to the classic funk and soul of the 1970s.
+                                <br><br>
+                                "Uptown Funk" won numerous awards, including Record of the Year and Best Pop Duo/Group Performance 
+                                at the 58th Annual Grammy Awards. It also received critical acclaim for its infectious melody, slick 
+                                production, and Bruno Mars' impressive vocal performance.
+                                <br><br>
+                                Overall, "Uptown Funk" is a timeless party anthem that continues to be a favorite of fans around 
+                                the world. Its funky sound, catchy chorus, and energetic performance make it a classic of modern pop music.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#4</div>
+                            <div class="album_cover"><img class="cover_pic" src="thinking_out.jpg" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">Thinking Out Loud</h1>
+                                <h2 class="content_text">by Ed Sheeran</h2>
+                                <h2 class="content_text">Over 3.8 billion streams on Spotify alone</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/34gCuhDGsG4bRPIf9bb02f?si=be96a611aa534313';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "Thinking Out Loud" is a popular song by British singer-songwriter Ed Sheeran. It was released 
+                                in 2014 as part of his album "X" and quickly became a hit, reaching the top of the charts in 
+                                several countries, including the UK and the US. The music video alone has been viewed over 
+                                3 billion times on YouTube, making it one of the most-watched music videos of all time.
+                                <br><br>
+                                The song has a slow and romantic feel, with Sheeran's signature acoustic guitar and heartfelt 
+                                vocals. It's a love song that celebrates the idea of growing old together with someone you love, 
+                                and cherishing each other's company even as the years go by.
+                                <br><br>
+                                "Thinking Out Loud" has been praised for its timeless appeal and its ability to connect with 
+                                people of all ages and backgrounds. It has won several awards, including the Grammy Award for 
+                                Song of the Year in 2016, and continues to be a beloved and frequently requested song for 
+                                weddings, proms, and other romantic occasions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#5</div>
+                            <div class="album_cover"><img class="cover_pic" src="sorry.png" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">Sorry</h1>
+                                <h2 class="content_text">by Justin Bieber</h2>
+                                <h2 class="content_text">Over 3.5 billion streams on Spotify alone</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/09CtPGIpYB4BrO8qb1RGsF?si=71eb13027c4e422f';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "Sorry" is a hit song by Canadian singer Justin Bieber, released on October 23, 2015, as 
+                                the second single from his fourth studio album, "Purpose." The song was produced by Skrillex 
+                                and BloodPop and written by Bieber, Julia Michaels, Justin Tranter, and Michael Tucker.
+                                <br><br>
+                                "Sorry" was a commercial success, topping the charts in several countries, including the United 
+                                States, Canada, and the United Kingdom. The music video for the song, which features a group of 
+                                female dancers, has also been a massive hit, with over 4 billion views on YouTube as of 2021.
+                                <br><br>
+                                Critics praised "Sorry" for its catchy melody, infectious beats, and Bieber's vocal performance. 
+                                The song has been nominated for several awards, including Song of the Year at the 2017 Grammy Awards.
+                                <br><br>
+                                Overall, "Sorry" is a hit song by Justin Bieber that showcases his growth as an artist, 
+                                both musically and lyrically. The song's catchy melody, infectious beats, and memorable chorus 
+                                have made it a pop culture phenomenon, and its commercial success has solidified Bieber's 
+                                place as one of the biggest pop stars of his generation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#6</div>
+                            <div class="album_cover"><img class="cover_pic" src="closer.jpg" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">Closer</h1>
+                                <h2 class="content_text">by The Chainsmokers ft. Halsey</h2>
+                                <h2 class="content_text">Over 3.3 billion streams on Spotify alone</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/7BKLCZ1jbUBVqRi2FVlTVw?si=90f579ee9ebc4c79';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "Closer" is a popular song by American electronic music duo The Chainsmokers, featuring American 
+                                singer Halsey. The song was released on July 29, 2016, and quickly became a huge commercial success, 
+                                reaching the top of the charts in multiple countries, including the United States, 
+                                the United Kingdom, and Australia.
+                                <br><br>
+                                The song's catchy chorus and memorable lyrics quickly caught on with audiences, making it a 
+                                viral hit. It went on to become one of the best-selling songs of the year and was nominated 
+                                for several awards, including a Grammy Award for Best Pop Duo/Group Performance.
+                                <br><br>
+                                In addition to its commercial success, "Closer" also helped to cement The Chainsmokers' status 
+                                as one of the biggest names in electronic dance music, and it helped to launch Halsey's career 
+                                as a mainstream pop artist.
+                                <br><br>
+                                Overall, "Closer" is a catchy and memorable song that showcases The Chainsmokers' talent for 
+                                creating infectious electronic pop anthems. Its success has had a significant impact on the 
+                                pop music landscape and has helped to define the sound of contemporary EDM-pop.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#7</div>
+                            <div class="album_cover"><img class="cover_pic" src="roar.jpg" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">Roar</h1>
+                                <h2 class="content_text">by Katy Perry</h2>
+                                <h2 class="content_text">Over 3.1 billion streams on Spotify alone</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/27tNWlhdAryQY04Gb2ZhUI?si=1cff479541fb492c';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "Roar" is a song by American singer Katy Perry, released as the lead single from her fourth studio 
+                                album, "Prism" in 2013. The song was co-written by Perry, along with Max Martin, Bonnie McKee, 
+                                Dr. Luke, and Cirkut, with production being handled by Martin, Dr. Luke, and Cirkut.
+                                <br><br>
+                                Upon its release, "Roar" was an instant commercial success, topping the charts in numerous 
+                                countries, including the US Billboard Hot 100, and earning Perry her eighth number-one 
+                                single on that chart. The music video alone has been viewed over 3.5 
+                                billion times on YouTube, making it one of the most-watched music videos of all time.
+                                <br><br>
+                                Overall, "Roar" has become one of Katy Perry's most iconic and beloved songs, cementing her 
+                                status as one of the biggest pop stars of her generation. Its positive message of 
+                                self-empowerment has resonated with audiences around the world, making it a cultural 
+                                touchstone that continues to inspire listeners to this day.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#8</div>
+                            <div class="album_cover"><img class="cover_pic" src="one_dance.png" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">One Dance</h1>
+                                <h2 class="content_text">by Drake ft. WizKid and Kyla</h2>
+                                <h2 class="content_text">Over 2.9 billion streams on Spotify alone</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/1zi7xx7UVEFkmKfv06H8x0?si=e0e375fdebf942b3';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "One Dance" is a song by Canadian rapper Drake, featuring Nigerian singer WizKid and British 
+                                singer Kyla. It was released on April 5, 2016, as the second single from Drake's fourth studio 
+                                album, "Views." The song is an uptempo dancehall and Afrobeat track, with a catchy hook 
+                                and rhythmic beats that make it a club favorite.
+                                <br><br>
+                                "One Dance" was a massive commercial success, reaching number one on the charts in multiple 
+                                countries, including the US, UK, Canada, and Australia. It also broke several streaming records, 
+                                becoming the first song to reach one billion streams on Spotify. The song's popularity was further 
+                                boosted by its use in various TikTok dance challenges, which helped to popularize the 
+                                track among a younger generation.
+                                <br><br>
+                                Overall, "One Dance" is a standout track in Drake's discography, showcasing his ability to blend 
+                                different genres and create music that appeals to a wide range of audiences. With its infectious 
+                                beat and memorable hook, the song remains a favorite among fans and continues to be played 
+                                at clubs and parties around the world.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#9</div>
+                            <div class="album_cover"><img class="cover_pic" src="counting_stars.jpg" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">Counting Stars</h1>
+                                <h2 class="content_text">by OneRepublic</h2>
+                                <h2 class="content_text">Over 2.8 billion streams on Spotify alone</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/6sy3LkhNFjJWlaeSMNwQ62?si=c3a41093923a494c';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "Counting Stars" is a popular song by American pop rock band OneRepublic. It was released on 
+                                June 14, 2013, as the lead single from their third studio album, "Native." The song was written 
+                                by Ryan Tedder, the lead vocalist of OneRepublic, along with other band members and Brent Kutzle. 
+                                It was produced by Tedder and Noel Zancanella.
+                                <br><br>
+                                The track received widespread commercial success, reaching the top ten on the charts in over twenty 
+                                countries, including the United States, the United Kingdom, Australia, and Canada. It also became 
+                                one of the best-selling singles of all time, with over 20 million copies sold worldwide.
+                                <br><br>
+                                Overall, "Counting Stars" is an upbeat and catchy song that showcases OneRepublic's unique sound 
+                                and musical style. Its success cemented the band's place in the mainstream music scene and 
+                                solidified their reputation as one of the most successful pop rock bands of the 21st century.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="song_container">
+                        <div class="entry">
+                            <div class="num">#10</div>
+                            <div class="album_cover"><img class="cover_pic" src="dont_stop.jpg" alt=""></div>
+                            <div class="details">
+                                <h1 class="sub_topic">Don't Stop Believin</h1>
+                                <h2 class="content_text">by Journey</h2>
+                                <h2 class="content_text">Over 1.7 billion streams on Spotify alone</h2>
+                            </div>
+                            <div class="visit">
+                                <button class="visit_btn" onclick="window.location.href='https://open.spotify.com/track/4bHsxqR3GMrXTxEPLuK5ue?si=2101c26f96c4421f';"><img class="spotify_img" src="spotify-icon.png" alt="Spotify"></button>
+                            </div>
+                        </div>
+                        <div class="about_song content_text">
+                            <p>
+                                "Don't Stop Believin'" is a classic rock anthem originally recorded by the American rock band Journey. 
+                                The song was released on their 1981 album "Escape" and has since become one of their most iconic 
+                                and recognizable tracks.The song was written by Journey's keyboardist Jonathan Cain, guitarist Neal Schon, and lead singer 
+                                Steve Perry.
+                                <br><br>
+                                "Don't Stop Believin'" has become a cultural phenomenon since its release, with its catchy melody 
+                                and inspiring lyrics resonating with people across generations. The song has been covered by numerous 
+                                artists and has been used in several movies, TV shows, and commercials.
+                                <br><br>
+                                In recent years, the song has gained renewed popularity thanks to its use in the hit TV show "Glee," 
+                                which featured a memorable cover of the song in its pilot episode. The song has also been used in 
+                                the final scene of the popular HBO show "The Sopranos," making it an even more iconic part of 
+                                American pop culture.
+                                <br><br>
+                                Overall, "Don't Stop Believin'" remains one of Journey's most enduring and beloved songs, 
+                                inspiring listeners to keep pushing forward and chasing their dreams.
+                            </p>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+            <!-- applying the footer used in all pages -->
+            <div class="footer">
+                <a class="back2top" href="#top">&#9708;</a>
+                <div class="social_media">
+                    <a class="fb" href="https://www.facebook.com/profile.php?id=100091327609432">
+                        <span class="tooltiptext">Follow us on Facebook</span>
+                        <img class="social_logo" src="facebook_logo.png" alt="Facebook">
+                    </a>
+                    <a class="inst" href="http://www.instagram.com/beatzz44">
+                        <span class="tooltiptext">Follow us on Instagram</span>
+                        <img class="social_logo" src="inster_logo.png" alt="Instagram">
+                    </a>
+                    <a class="twt" href="https://twitter.com/beatzzrckz">
+                        <span class="tooltiptext">Follow us on Twitter</span>
+                        <img class="social_logo" src="tweeter_logo.png" alt="Twitter">
+                    </a>
+                </div>
+                <div class="copyright_text">&copy;2023 BEATZz</div>
+                <div class="pg_editor">
+                    <a href="SiteMap.html">Site Map </a>&VerticalLine;&VerticalLine;<a href="pageEditor(Sahan).html"> Page Editor</a>
+                </div>
+            </div>   
+        </div>
+
+        <script src="page_links.js"></script>
+    </body>
+</html>
