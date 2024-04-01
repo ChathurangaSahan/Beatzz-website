@@ -6,7 +6,7 @@ Beatzz is a music related website, showcasing the history, top musicians and mus
 Clone the repository to your local machine. Navigate to the 'main_page.html' and select file. The page creator/ editor details can be viewed by selecting the 'Page Editor' option at the bottom of each page.
 
 # --Authors--
-Full name of programmer : Haputhanthrige Sahan Chathuranga Samarasinghe. 
+Full name of programmer : Haputhanthrige Sahan Chathuranga Samarasinghe.
 Contribution            : NAVIGATION BAR, TOP SONGS, QUERY FORM, MAIN PAGE, FOOTER.
 Email address           : chathurangasahan2002@gmail.com
 IIT registration number : 20220334. 
