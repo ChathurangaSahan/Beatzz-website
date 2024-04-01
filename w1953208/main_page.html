@@ -1,0 +1,168 @@
+<!-- Name    : Haputhanthrige Sahan Chathuranga Samarasinghe
+     IIT No. : 20220334
+     UoW No. : w1953208  -->
+     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- linking the css files  -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main_page.css">
+    <link rel="stylesheet" href="common.css">
+    <title>BEATZ</title>
+</head>
+<body>
+    <!-- using a div as a container for the complete body -->
+    <div class="body_container">
+        <!-- creating a div for the website logo of main page above navigater -->
+        <div class="top_logo">
+            <img id="top_img" src="logo_colored2-removebg-preview.png" alt="BEATZz">
+        </div>
+        <!-- making the navigation bar within a div -->
+        <div id="navi_bar">
+            <!-- navigation buttons are linked to a java script to redirect page to respective page -->
+            <img class="home_logo_selected" id="home_logo" src="white_logo2.png" alt="BEATZz">
+            <button class="selected_btn" id="home">HOME</button>
+            <!-- creating the drop down manu of the explore button within an inner div-->
+            <div class="explore_dropdown">
+                <button id="navi_btn_explore" class="navi_btn">EXPLORE</button>
+                <div class="explore_dropdown_content">
+                    <button class="navi_btn_dropdown" id="popCulture">POP CULTURE</button><br>
+                    <button class="navi_btn_dropdown" id="topSongs">TOP SONGS</button><br>
+                    <button class="navi_btn_dropdown" id="bestConcerts">CONCERTS</button><br>
+                    <button class="navi_btn_dropdown" id="awards">AWARDS</button>
+                </div>
+            </div>
+            <button class="navi_btn" id="gallery">GALLERY</button>
+            <button class="navi_btn" id="quiz">QUIZ</button>
+            <button class="navi_btn" id="shop">SHOP</button>
+            <button class="navi_btn" id="contactUs">CONTACT US</button>
+            <button class="navi_btn" id="aboutUs">ABOUT US</button>
+        </div>
+        <!-- creating welcome screen within div-->
+        <div id="top" class="welcome_screen">
+            <div class="welcome_screen_text main_topic">
+                <h1 class="animation_h1">BEATZz</h1>
+                <h3 class="animation_h2">Music Is Life Itself...</h3>
+            </div>
+        </div>
+        <!-- creating quotes within div -->
+        <div class="quote1">
+            <!-- using seperate div for text and image for easier handling -->
+            <div class="quote1_img">
+                <img id="kp_img" src="ketty_perry_2-removebg-preview.png" alt="KP">
+            </div>
+            <div class="quote1_text">
+                <h1 class="quote_text">We all have magic inside us, and sometimes it takes a lifetime to find it, but it's always there.</h1>
+                <h3 class="content_text">-Katy Perry-</h3>
+            </div>
+        </div>
+        <!-- creating a window with topics of the content under explore and linked to sub topics(content) -->
+        <div class="explore">
+            <div class="topic sub_topic">
+                <h1>EXPLORE</h1>
+            </div>
+            <div class="content_container">
+                <!-- separate icons for each sub-topic -->
+                <div id="pc_content" class="content" onclick="window.location.href='popCultureContent.html'">
+                    <h1>POP CULTURE</h1>
+                </div>
+                <div id="tm_content" class="content" onclick="window.location.href='top_songs.html'">
+                    <h1>TOP MUSIC</h1>
+                </div>
+                <div id="cn_content" class="content" onclick="window.location.href='concerts.html'">
+                    <h1>CONCERTS</h1>
+                </div>
+                <div id="aw_content" class="content" onclick="window.location.href='MusicAwards.html'">
+                    <h1>AWARDS</h1>
+                </div>
+            </div>
+        </div>
+        <!-- creating an introduction to gallery within a div -->
+        <div class="gallery">
+            <div class="topic sub_topic">
+                <h1>GALLERY</h1>
+            </div>
+            <div class="gallery_content content_text">
+                <h1>A Gallery Of Top Pop Musicians</h1>
+                <h2>Find Out The Musicians Behind Your Favourite Music</h2>
+                <button id="gallery_btn" onclick="window.location.href='gallery.html'">Go To Gallery &#9655;</button>
+            </div>
+        </div>
+        <!-- creating quotes within div -->
+        <div class="quote2">
+            <!-- using seperate div for text and image for easier handling -->
+            <div class="quote2_text">
+                <h1 class="quote_text">Music can change the world because it can change people.</h1>
+                <h3 class="content_text">-Bono (U2)-</h3>
+            </div>
+            <div class="quote2_img">
+                <img id="bu2_img" src="bono_u2-removebg-preview.png" alt="B U2">
+            </div>
+        </div>
+        <!-- creating an introduction to the quiz witha link to quiz page -->
+        <div class="quiz_ad">
+            <div class="topic sub_topic">
+                <h1>QUIZ</h1>
+            </div>
+            <div class="quiz_ad_content content_text">
+                <h1>How Good Is Your Knowledge On Everything Pop Music?</h1>
+                <h2>Try Now To Find Out</h2>
+                <button id="quiz_ad_btn" onclick="window.location.href='QuizHome.html'">Go To Quiz &#9655;</button>
+            </div>
+        </div>
+        <!-- creating quotes within div -->
+        <div class="quote3">
+            <!-- using seperate div for text and image for easier handling -->
+            <div class="quote3_img">
+                <img id="sg_img" src="selena_gomez-removebg-preview.png" alt="SG">
+            </div>
+            <div class="quote3_text">
+                <h1 class="quote_text">The most important thing in life is to love yourself, embrace who you are, and be kind to yourself. That's the key to happiness.</h1>
+                <h3 class="content_text">-Selena Gomez-</h3>
+            </div>
+        </div>
+        <!-- reating an introduction to the shop witha link to shop page -->
+        <div class="shop_ad">
+            <div class="topic sub_topic">
+                <h1>SHOP</h1>
+            </div>
+            <div class="shop_ad_content content_text">
+                <h1>What To Enjoy The Latest Pop Trends And Fashions?</h1>
+                <h2>Visit Our Shop To Find Out</h2>
+                <button id="shop_ad_btn" onclick="window.location.href='buyProducts.html'">Go To Shop &#9655;</button>
+            </div>
+        </div>
+        <!-- creating footer with in a div -->
+        <div class="footer">
+            <!-- creating a back to top button linked to the top of the page -->
+            <a class="back2top" href="#top">&#9708;</a>
+            <div class="social_media">
+                <!-- creating individual links to different social media related to web site -->
+                <a class="fb" href="https://www.facebook.com/profile.php?id=100091327609432">
+                    <!-- creating tool tips for social media icons -->
+                    <span class="tooltiptext">Follow us on Facebook</span>
+                    <img class="social_logo" src="facebook_logo.png" alt="Facebook">
+                </a>
+                <a class="inst" href="http://www.instagram.com/beatzz44">
+                    <!-- creating tool tips for social media icons -->
+                    <span class="tooltiptext">Follow us on Instagram</span>
+                    <img class="social_logo" src="inster_logo.png" alt="Instagram">
+                </a>
+                <a class="twt" href="https://twitter.com/beatzzrckz">
+                    <!-- creating tool tips for social media icons -->
+                    <span class="tooltiptext">Follow us on Twitter</span>
+                    <img class="social_logo" src="tweeter_logo.png" alt="Twitter">
+                </a>
+            </div>
+            <div class="copyright_text">&copy;2023 BEATZz</div>
+            <div class="pg_editor">
+                <!-- creating links to site map and page editor -->
+                <a href="SiteMap.html">Site Map </a>&VerticalLine;&VerticalLine;<a href="pageEditor(Sahan).html"> Page Editor</a>
+            </div>
+        </div>
+    </div>
+    <!-- importing java script related to navigation bar -->
+    <script src="page_links.js"></script>
+</body>
+</html>

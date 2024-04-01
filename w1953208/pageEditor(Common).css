@@ -1,0 +1,51 @@
+/*   Name    : Haputhanthrige Sahan Chathuranga Samarasinghe
+     IIT No. : 20220334
+     UoW No. : w1953208 */
+     
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-weight: 300;
+    background: url(https://static.vecteezy.com/system/resources/previews/002/375/040/original/modern-white-background-free-vector.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.topic{
+    background: #000;
+    border-radius: 10px;
+    margin: 50px 50px 70px 50px;
+    padding: 50px 0 50px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 11px rgba(0,0,0,0.8);
+}
+.topic h1, .topic p{
+    color: #ffffff;
+}
+.content{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.content .btn {
+    color: hsl(0, 0%, 100%);
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(35, 35, 35);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+.content .btn:hover{
+    letter-spacing: 3px;
+    background-color: rgb(225, 225, 225);
+    color: #000;
+}
